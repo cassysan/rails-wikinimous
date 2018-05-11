@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="article">
+      <h1> <%= @article.title %> </h1>
+      <hr>
+      <p> <%= @article.content %> </p>
+        <div class="go_back_link">
+          <%= link_to articles_path do %>
+          <button class="btn btn-success"><i class="fas fa-undo"></i>Go Back to Articles List</button>
+          <% end %>
+        <div class="edit-button">
+          <%= link_to edit_path do %>
+          <button class="btn btn-success">Edit this Article</button>
+          <% end %>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
